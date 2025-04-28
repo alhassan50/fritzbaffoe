@@ -2,14 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import {
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-  Button,
-} from "@mui/material";
-import { Highlight } from "./Highlights"; // Adjust path if needed
+import { Dialog, DialogContent } from "@mui/material";
+import { Highlight } from "./Highlights";
 
 export function HighlightCard({ highlight }: { highlight: Highlight }) {
   const [open, setOpen] = useState(false);
@@ -83,17 +77,24 @@ export function HighlightCard({ highlight }: { highlight: Highlight }) {
 
       {/* MUI Dialog */}
       <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md">
-        <DialogTitle>{highlight.name}</DialogTitle>
+        <div className="p-4 border-b border-[#d9d9d9] flex justify-between gap-4 items-center w-full">
+          <h4 className=" ">{highlight.name}</h4>
+          <button title="close" onClick={handleClose} color="primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-5 h-5"
+            >
+              <path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path>
+            </svg>
+          </button>
+        </div>
         <DialogContent>
-          <div className="text-gray-700 text-center py-10">
+          <div className="text-gray-700 text-center py-10 h-screen">
             <i>highlights coming soon...</i>
           </div>
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary" variant="contained">
-            Close
-          </Button>
-        </DialogActions>
       </Dialog>
     </>
   );
