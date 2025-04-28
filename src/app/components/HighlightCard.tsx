@@ -76,7 +76,7 @@ export function HighlightCard({ highlight }: { highlight: Highlight }) {
       </div>
 
       {/* MUI Dialog */}
-      <Dialog open={open} onClose={handleClose} fullWidth maxWidth="md">
+      <Dialog open={open} onClose={handleClose} fullWidth maxWidth="lg">
         <div className="p-4 border-b border-[#d9d9d9] flex justify-between gap-4 items-center w-full">
           <h4 className=" ">{highlight.name}</h4>
           <button title="close" onClick={handleClose} color="primary">
