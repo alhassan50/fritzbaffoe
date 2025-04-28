@@ -8,7 +8,7 @@ import Footer from "./home/components/Footer"; */
 
 export default function Home() {
   return (
-    <div className="scro scroll-smooth">
+    <div className="overflow-hidden scroll-smooth">
       <Hero />
       <Highlights />
       <Awards />

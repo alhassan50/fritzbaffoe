@@ -110,15 +110,15 @@ export default function Highlights() {
   };
   return (
     <Section id="awards">
-      <div className="">
+      <div className="max-w-[1054px] mx-auto w-full">
         {/* Header */}
-        <div className="text-left mb-20 max-w-[1054px] mx-auto">
+        <div className="text-left mb-20">
           <h2 className="font-semibold text-gray-600 !text-left text-3xl leading-tight">
             Stories Told in Still Frames—
             <span className="text-[var(--primary)]">Highlights </span>
           </h2>
         </div>
-        <div className="max-w-[1054px] mx-auto overflow-x-visible">
+        <div>
           <Swiper
             breakpoints={breakpoints}
             modules={[Navigation]}

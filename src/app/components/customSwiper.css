@@ -1,19 +1,39 @@
 .swiper-wrapper {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 .swiper {
   overflow: visible;
-  /* background-color: red; */
-  max-width: 500px;
+  max-width: 360px; /* Default (mobile first) */
   min-width: 300px;
   margin-right: 0;
   margin-left: 0;
-  
+}
+
+/* From small screens (sm) */
+@media (min-width: 640px) {
+  .swiper {
+    max-width: 420px;
+  }
+}
+
+/* From medium screens (md) */
+@media (min-width: 768px) {
+  .swiper {
+    max-width: 480px;
+  }
+}
+
+/* From large screens (lg) */
+@media (min-width: 1024px) {
+  .swiper {
+    max-width: 500px;
+  }
 }
 
 .swiper-button-disabled {
-  display: none;
+  opacity: .5;
+  cursor: not-allowed;
 }
 
 .swiper-button-prev::after,
@@ -24,14 +44,14 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  top: 480px;
+  top: 420px;
   width: 60px;
   height: 60px;
   transition: linear 150ms;
 }
 
 .swiper-button-next {
-  left: 40%;
+  left: 20%;
 }
 
 .swiper-button-prev:hover,
