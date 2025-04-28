@@ -9,7 +9,16 @@ import "swiper/css";
 import "swiper/css/bundle";
 import "./customSwiper.css";
 
-export const highlights = [
+interface Highlight {
+  id: string;
+  name: string;
+  description: string;
+  coverImage: string;
+  tags: string[];
+  allImages: string[];
+}
+
+export const highlights: Highlight[] = [
   {
     id: "african-games-2023",
     name: "Accra African Games",
@@ -39,23 +48,18 @@ export const highlights = [
   },
 ];
 
-interface HighlightCardProps {
-  name: string;
-  description: string;
-  coverImage: string;
-  tags: string[];
-}
 
-export function HighlightCard({
-  name,
-  description,
-  coverImage,
-  tags,
-}: HighlightCardProps) {
+
+export function HighlightCard({ highlight }: { highlight: Highlight }) {
   return (
-    <div className="relative w-full h-92 rounded-3xl overflow-hidden group flex min-w-[420px] md:min-w-[480px] lg:min-w-[500px]">
+    <div className="relative w-full h-92 rounded-3xl overflow-hidden group flex min-w-[360px] sm:min-w-[420px] md:min-w-[480px] lg:min-w-[500px]">
       {/* Background Image */}
-      <Image src={coverImage} alt={name} fill className="object-cover" />
+      <Image
+        src={highlight.coverImage}
+        alt={highlight.name}
+        fill
+        className="object-cover"
+      />
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50 z-10" />
@@ -65,24 +69,24 @@ export function HighlightCard({
         <div>
           <div className="flex justify-end">
             <span
-              key={tags[0]}
+              key={highlight.tags[0]}
               className="px-4 inline-block mb-1 py-2 border border-white text-[10px] text-white backdrop-blur-md bg-white/5 rounded-full"
             >
-              {tags[0]}
+              {highlight.tags[0]}
             </span>
           </div>
           <div className="space-x-1">
             <span
-              key={tags[1]}
+              key={highlight.tags[1]}
               className="px-4 inline-block py-2 border border-white text-[10px] text-white backdrop-blur-md bg-white/5 rounded-full"
             >
-              {tags[1]}
+              {highlight.tags[1]}
             </span>
             <span
-              key={tags[2]}
+              key={highlight.tags[2]}
               className="px-4 inline-block py-2 border border-white text-[10px] text-white backdrop-blur-md bg-white/5 rounded-full"
             >
-              {tags[2]}
+              {highlight.tags[2]}
             </span>
           </div>
         </div>
@@ -90,10 +94,14 @@ export function HighlightCard({
       {/* Content */}
       <div className="relative z-20 p-6 flex flex-col justify-end h-full">
         {/* Title */}
-        <h5 className="text-white text-lg font-medium mb-2">{name}</h5>
+        <h5 className="text-white text-lg font-medium mb-2">
+          {highlight.name}
+        </h5>
 
         {/* Description */}
-        <p className="text-white text-sm font-normal mb-4">{description}</p>
+        <p className="text-white text-sm font-normal mb-4">
+          {highlight.description}
+        </p>
 
         {/* View More Button */}
         <button className="self-start bg-white text-black text-sm font-medium py-3 px-6  rounded-full hover:bg-gray-200 transition">
@@ -109,7 +117,7 @@ export default function Highlights() {
     320: { slidesPerView: 1 },
   };
   return (
-    <Section id="awards">
+    <Section id="highlights">
       <div className="max-w-[1054px] mx-auto w-full">
         {/* Header */}
         <div className="text-left mb-20">
@@ -128,12 +136,7 @@ export default function Highlights() {
           >
             {highlights.map((highlight) => (
               <SwiperSlide key={highlight.id} className="">
-                <HighlightCard
-                  name={highlight.name}
-                  description={highlight.description}
-                  coverImage={highlight.coverImage}
-                  tags={highlight.tags}
-                />
+                <HighlightCard highlight={highlight} />
               </SwiperSlide>
             ))}
           </Swiper>

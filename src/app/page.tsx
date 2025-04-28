@@ -15,6 +15,11 @@ export default function Home() {
       <Contact />
       {/* <FeaturedProject />
       <Footer /> */}
+      <footer className="py-4">
+        <small className="text-center">
+          Fritz Baffoe {new Date().getFullYear()} &copy; All Rights Reserved.
+        </small>
+      </footer>
     </div>
   );
 }

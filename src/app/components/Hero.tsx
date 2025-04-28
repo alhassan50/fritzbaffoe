@@ -30,7 +30,7 @@ export default function Hero() {
         </Link>
         <Link
           href={"/#awards"}
-          className="py-3 bg-white text-[20px] px-8 font-medium rounded-full hover:underline transition text-[var(--primary)] hover:bg-[#fafafa] flex gap-1 items-center group"
+          className="py-3 bg-white text-[20px] px-8 font-medium rounded-full hover:underline transition text-[var(--primary)] hover:bg-[#fafafa] flex gap-1 items-center group justify-center"
         >
           Go To Awards
           <svg

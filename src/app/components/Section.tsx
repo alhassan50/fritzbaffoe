@@ -13,7 +13,7 @@ export default function Section({
 }>) {
   return (
     <section id={id} className={`${sectionClassName}`}>
-      <div className={`px-[3%] py-24 grid gap-6 ${className}`}>{children}</div>
+      <div className={`px-[5%] py-24 grid gap-6 ${className}`}>{children}</div>
     </section>
   );
 }
