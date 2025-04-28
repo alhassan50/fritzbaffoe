@@ -76,9 +76,21 @@ export function HighlightCard({ highlight }: { highlight: Highlight }) {
       </div>
 
       {/* MUI Dialog */}
-      <Dialog open={open} onClose={handleClose} fullWidth maxWidth="lg">
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        fullWidth
+        maxWidth="lg"
+        slotProps={{
+          paper: {
+            sx: {
+              borderRadius: "1.5rem",
+            },
+          },
+        }}
+      >
         <div className="p-4 border-b border-[#d9d9d9] flex justify-between gap-4 items-center w-full">
-          <h4 className=" ">{highlight.name} In Perspective</h4>
+          <h5 className="font-medium">{highlight.name} In Perspective</h5>
           <button title="close" onClick={handleClose} color="primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"
