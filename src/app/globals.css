@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #4285F4;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplayRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplayBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplayExtralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplayLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplayMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/clash-display/ClashDisplaySemibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Apply the font globally */
+body {
+  font-family: "ClashDisplay", sans-serif;
+  color: var(--foreground);
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+h1 {
+  @apply text-3xl md:text-4xl lg:text-5xl
+}
+
+h2 {
+  @apply text-2xl md:text-3xl lg:text-4xl
+}
+
+h3 {
+  @apply text-xl md:text-2xl lg:text-3xl
+}
+
+h4 {
+  @apply text-lg md:text-xl 
+}
+
+h5 {
+  @apply text-base 2xl:text-lg 
+}
+
+button {
+  @apply cursor-pointer
+}
+
+
