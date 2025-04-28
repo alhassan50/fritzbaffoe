@@ -42,7 +42,7 @@ export const highlights: Highlight[] = [
     name: "Oriflame Campaign",
     description:
       "Clean, bold, and radiant—behind-the-scenes and spotlight shots from a dynamic Oriflame shoot.",
-    coverImage: "/images/highlights/oriflame/oriflame-campaign-cover.jpg", // replace with your actual path
+    coverImage: "/images/highlights/oriflame/oriflame-campaign-cover.JPG",
     tags: ["Beauty", "Focus", "Style"],
     allImages: [] as string[],
   },
