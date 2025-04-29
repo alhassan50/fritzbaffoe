@@ -35,7 +35,21 @@ export const highlights: Highlight[] = [
       "Unfiltered shots revealing the harsh impact of illegal mining on Ghana's land and people.",
     coverImage: "/images/highlights/galamsey/galamsey-impact-cover.jpg", // replace with your actual path
     tags: ["Environment", "Awareness", "Change"],
-    allImages: [] as string[],
+    allImages: [
+      "/images/highlights/galamsey/DJI_0054.jpg",
+      "/images/highlights/galamsey/REQ00242.jpg",
+      "/images/highlights/galamsey/REQ00250.jpg",
+      "/images/highlights/galamsey/REQ00284.jpg",
+      "/images/highlights/galamsey/REQ00350.jpg",
+      "/images/highlights/galamsey/REQ00289.jpg",
+      "/images/highlights/galamsey/REQ00299.jpg",
+      "/images/highlights/galamsey/REQ00304.jpg",
+      "/images/highlights/galamsey/REQ00318.jpg",
+      "/images/highlights/galamsey/REQ00332.jpg",
+      "/images/highlights/galamsey/REQ00334.jpg",
+      "/images/highlights/galamsey/REQ00347.jpg",
+      "/images/highlights/galamsey/REQ00372.jpg",
+    ],
   },
   {
     id: "oriflame-campaign",
@@ -46,7 +60,7 @@ export const highlights: Highlight[] = [
     tags: ["Beauty", "Focus", "Style"],
     allImages: [
       "/images/highlights/oriflame/FR5A9009.JPG",
-      "/images/highlights/oriflame/3b72a0.jpg",
+      "/images/highlights/oriflame/3b72a0.JPG",
       "/images/highlights/oriflame/FR5A8929.JPG",
       "/images/highlights/oriflame/FR5A8943.JPG",
       "/images/highlights/oriflame/FR5A8944.JPG",

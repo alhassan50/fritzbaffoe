@@ -102,12 +102,12 @@ export function HighlightCard({ highlight }: { highlight: Highlight }) {
             </svg>
           </button>
         </div>
-        <DialogContent>
+        <DialogContent sx={{ paddingBottom: "40px" }}>
           <div className="text-gray-700 text-center h-screen">
             {highlight.allImages.length === 0 ? (
               <i>highlights coming soon...</i>
             ) : (
-              <div className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4">
+              <div className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4 pb-4">
                 {highlight.allImages.map((image, index) => (
                   <Image
                     key={index + image}
