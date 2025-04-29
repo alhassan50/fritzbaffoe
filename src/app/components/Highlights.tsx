@@ -60,7 +60,7 @@ export const highlights: Highlight[] = [
     tags: ["Beauty", "Focus", "Style"],
     allImages: [
       "/images/highlights/oriflame/FR5A9009.JPG",
-      "/images/highlights/oriflame/3b72a0.JPG",
+      "/images/highlights/oriflame/3b72a0.jpg",
       "/images/highlights/oriflame/FR5A8929.JPG",
       "/images/highlights/oriflame/FR5A8943.JPG",
       "/images/highlights/oriflame/FR5A8944.JPG",
