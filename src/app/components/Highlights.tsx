@@ -44,7 +44,22 @@ export const highlights: Highlight[] = [
       "Clean, bold, and radiant—behind-the-scenes and spotlight shots from a dynamic Oriflame shoot.",
     coverImage: "/images/highlights/oriflame/oriflame-campaign-cover.JPG",
     tags: ["Beauty", "Focus", "Style"],
-    allImages: [] as string[],
+    allImages: [
+      "/images/highlights/oriflame/FR5A9009.JPG",
+      "/images/highlights/oriflame/3b72a0.jpg",
+      "/images/highlights/oriflame/FR5A8929.JPG",
+      "/images/highlights/oriflame/FR5A8943.JPG",
+      "/images/highlights/oriflame/FR5A8944.JPG",
+      "/images/highlights/oriflame/FR5A8969.JPG",
+      "/images/highlights/oriflame/FR5A8976.JPG",
+      "/images/highlights/oriflame/FR5A8978.JPG",
+      "/images/highlights/oriflame/FR5A8990.JPG",
+      "/images/highlights/oriflame/FR5A8996.JPG",
+      "/images/highlights/oriflame/FR5A9010.JPG",
+      "/images/highlights/oriflame/FR5A9049.JPG",
+      "/images/highlights/oriflame/FR5A9052.JPG",
+      "/images/highlights/oriflame/FR5A9065.JPG",
+    ],
   },
 ];
 

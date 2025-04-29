@@ -1,3 +1,5 @@
+"use client"
+
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
 import Awards from "./components/Awards";
@@ -15,7 +17,7 @@ export default function Home() {
       <Contact />
       {/* <FeaturedProject />
       <Footer /> */}
-      <footer className="py-4">
+      <footer className="py-4 flex justify-center items-center">
         <small className="text-center">
           Fritz Baffoe {new Date().getFullYear()} &copy; All Rights Reserved.
         </small>

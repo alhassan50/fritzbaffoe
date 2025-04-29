@@ -18,7 +18,7 @@ export default function Contact() {
       <div className="w-full max-w-[1054px] mx-auto">
         <div>
           {/* Section Title */}
-          <h2 className="inline-block text-left text-4xl bg-white py-2 px-8 font-semibold text-gray-700 mb-10">
+          <h2 className="inline-block text-left w-full text-4xl bg-white py-2 px-8 font-semibold text-gray-700 mb-10">
             Contact Or Follow Me
           </h2>
 
