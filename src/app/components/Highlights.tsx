@@ -27,7 +27,7 @@ export const highlights: Highlight[] = [
     coverImage: "/images/highlights/african-games/african-games-cover.jpg", // replace with your actual path
     tags: ["Energy", "Passion", "Victory"],
     allImages: [
-    "/images/highlights/african-games/AAG'23 (1).jpg",
+    "/images/highlights/african-games/AAG'23 (1) (1).jpg",
     "/images/highlights/african-games/AAG'23 (10).jpg",
     "/images/highlights/african-games/AAG'23 (18).jpg",
     "/images/highlights/african-games/AAG'23 (27).jpg",
@@ -45,7 +45,6 @@ export const highlights: Highlight[] = [
     "/images/highlights/african-games/AAG'23 (142).jpg",
     "/images/highlights/african-games/AAG'23 (145).jpg",
     "/images/highlights/african-games/AAG'23 (171) (1).jpg",
-    "/images/highlights/african-games/AAG'23 (183) (2).jpg",
     "/images/highlights/african-games/AAG'23 (183).jpg",
     "/images/highlights/african-games/AAG'23 (198).jpg",
     "/images/highlights/african-games/AAG'23 (225).jpg"
