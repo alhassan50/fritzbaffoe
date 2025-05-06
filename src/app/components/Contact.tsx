@@ -1,12 +1,11 @@
-import { WhatsApp, Call, Facebook, Tiktok, Pinterest } from "./Icons";
+import { WhatsApp, Call, Instagram, Twitter } from "./Icons";
 import Section from "./Section";
 
 const contacts = [
-  { Icon: Call, title: "Phone Call", label: "+233 12 345 6789" },
-  { Icon: WhatsApp, title: "WhatsApp", label: "+233 12 345 6789" },
-  { Icon: Facebook, title: "Facebook", label: "Fritz Baffoe" },
-  { Icon: Tiktok, title: "TikTok", label: "@fritz_b" },
-  { Icon: Pinterest, title: "Pinterest", label: "@fritz_b" },
+  { Icon: Call, title: "Phone Call", label: "+233 26 990 1135" },
+  { Icon: WhatsApp, title: "WhatsApp", label: "+233 26 990 1135" },
+  { Icon: Instagram, title: "Instagram", label: "fritzfaffoe" },
+  { Icon: Twitter, title: "Twitter", label: "@fritzfaffoe" },
 ];
 
 export default function Contact() {
